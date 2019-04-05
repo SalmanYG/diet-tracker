@@ -1,6 +1,6 @@
 package model;
 
-public class Food extends Edibles {
+public class Food extends Edible {
 	public Food(String name, double calories, double portion, double fat, double carbohydrates, double protein) {
 		super(name, calories, portion, fat, carbohydrates, protein);
 	}

@@ -1,10 +1,12 @@
 package model;
 
-public class Edibles {
+import java.io.Serializable;
+
+public class Edible implements Serializable {
 	private String name;
 	private double portion, calories, fat, carbohydrates, protein;
 
-	public Edibles(String name, double calories, double portion, double fat, double carbohydrates, double protein) {
+	public Edible(String name, double calories, double portion, double fat, double carbohydrates, double protein) {
 		this.name = name;
 		this.calories = calories;
 		this.portion = portion;

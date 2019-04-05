@@ -1,6 +1,6 @@
 package model;
 
-public class Bevarage extends Edibles {
+public class Bevarage extends Edible {
 
 	public Bevarage(String name, double calories, double portion, double fat, double carbohydrates, double protein) {
 		super(name, calories, portion, fat, carbohydrates, protein);
