@@ -6,15 +6,17 @@ import java.util.*;
 
 public class Meal implements Serializable {
 
-    public static final MealList mealList = new MealList();
+    private static final MealList mealList = new MealList();
 
     private ArrayList<Edible> list;
 
-    public Meal() {
+    public Meal()
+    {
 		list = new ArrayList<>();
 	}
 
-	public ArrayList<Edible> getList() {
+	public ArrayList<Edible> getList()
+    {
 		return this.list;
 	}
 
