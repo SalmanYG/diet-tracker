@@ -1,3 +1,4 @@
+package model;
 
 public class Edibles {
 	private String name;

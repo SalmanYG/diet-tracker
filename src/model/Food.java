@@ -1,3 +1,4 @@
+package model;
 
 public class Food extends Edibles {
 	public Food(String name, double calories, double portion, double fat, double carbohydrates, double protein) {
