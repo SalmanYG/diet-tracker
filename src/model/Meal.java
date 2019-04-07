@@ -1,35 +1,25 @@
 package model;
 
-import java.io.IOException;
 import java.io.Serializable;
-import java.util.*;
+import java.util.ArrayList;
 
-public class Meal implements Serializable {
-
-    private static final MealList mealList = new MealList();
-
-    private ArrayList<Edible> list;
-
-    public Meal()
-    {
-		list = new ArrayList<>();
+public class Meal implements Serializable{
+	
+	private ArrayList<Edible> list;
+	
+	public Meal() {
+		list = new ArrayList();
 	}
-
-	public ArrayList<Edible> getList()
-    {
+	
+	public ArrayList<Edible> getList(){
 		return this.list;
 	}
-
-	public void add(Edible edible) throws IOException
-    {
-        list.add(edible);
-        mealList.add(this);
-    }
-
-
-
-
-	/*public double sumCalories() {
+	
+	public void Add(Edible edible) {
+		getList().add(edible);
+	}
+	
+	public double sumCalories() {
 
 		double sumCal = 0.0;
 		for (int i = 0; i < getList().size(); i++) {
@@ -86,6 +76,6 @@ public class Meal implements Serializable {
 			result += getList().get(i).toString() + "\n";
 		}
 		return result;
-	}*/
+	}
 	
 }
