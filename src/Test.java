@@ -5,6 +5,7 @@ import model.Meal;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Test {
 
@@ -28,6 +29,10 @@ public class Test {
 
         smthn.put(1, daily);
         System.out.println(smthn.get(1).get(1).sumCalories());*/
+        Scanner in = new Scanner(System.in);
+        System.out.print("1 2 3 to choose meal: ");
+        int mealChoice = in.nextInt();
+        System.out.print("add to add all food u want");
 
 
 

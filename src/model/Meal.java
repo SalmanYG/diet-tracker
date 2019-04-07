@@ -6,8 +6,6 @@ import java.util.*;
 
 public class Meal implements Serializable {
 
-    private static final MealList mealList = new MealList();
-
     private ArrayList<Edible> list;
 
     public Meal()
@@ -22,14 +20,18 @@ public class Meal implements Serializable {
 
 	public void add(Edible edible) throws IOException
     {
-        list.add(edible);
-        mealList.add(this);
+
     }
 
 
 
 
-	/*public double sumCalories() {
+
+
+
+
+
+    public double sumCalories() {
 
 		double sumCal = 0.0;
 		for (int i = 0; i < getList().size(); i++) {
@@ -86,6 +88,6 @@ public class Meal implements Serializable {
 			result += getList().get(i).toString() + "\n";
 		}
 		return result;
-	}*/
+	}
 	
 }
