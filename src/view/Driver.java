@@ -26,23 +26,16 @@ public class Driver extends Application {
     {
         mainStage = primaryStage;
 
-
         FXMLLoader loader = new FXMLLoader(getClass().getResource("MainWindow.fxml"));
         MainController mainController = new MainController();
         loader.setController(mainController);
         Parent parent = loader.load();
 
-        Date date = new Date();
-        String dateStr = date.toString();
-
-        mainController.setDateLabelText(dateStr);
-
-
+        mainController.setDateLabelText(new Date().toString());
 
         primaryStage.setTitle("Diet Tracker");
         primaryStage.setScene(new Scene(parent, 1000, 600));
         primaryStage.show();
-
     }
 
 

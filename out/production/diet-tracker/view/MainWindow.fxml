@@ -12,7 +12,7 @@
 
 <AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #e8eaf6;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <HBox fx:id="dateContainer" alignment="CENTER" layoutX="300.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <HBox fx:id="dateContainer" alignment="CENTER" layoutX="300.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
                 <Label fx:id="dateLabel" text="DD/MM/YYYY">
                     <font>
@@ -22,7 +22,7 @@
             </children></HBox>
         <HBox fx:id="mealsConatiner" alignment="CENTER" layoutX="97.0" layoutY="200.0" maxWidth="1.7976931348623157E308" prefHeight="197.0" prefWidth="606.0" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
             <children>
-                <VBox fx:id="breakfastContainer" alignment="CENTER" onMouseClicked="#mealClickHandler" prefHeight="200.0" prefWidth="213.0" style="-fx-border-width: 1; -fx-border-color: #b6b8c3;">
+                <VBox fx:id="breakfastContainer" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#mealClickHandler" prefHeight="200.0" prefWidth="213.0" style="-fx-border-width: 1; -fx-border-color: #b6b8c3;">
                     <children>
                         <Label fx:id="breakfastLabel" alignment="CENTER" prefWidth="232.0" text="BREAKFAST">
                             <font>
@@ -51,7 +51,7 @@
                         <Insets left="50.0" right="50.0" />
                     </HBox.margin>
                 </VBox>
-                <VBox fx:id="lunchContainer" alignment="CENTER" onMouseClicked="#mealClickHandler" prefHeight="200.0" prefWidth="100.0" style="-fx-border-width: 1; -fx-border-color: #b6b8c3;">
+                <VBox fx:id="lunchContainer" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#mealClickHandler" prefHeight="200.0" prefWidth="100.0" style="-fx-border-width: 1; -fx-border-color: #b6b8c3;">
                     <children>
                         <Label fx:id="lunchLabel" text="LUNCH">
                             <font>
@@ -81,7 +81,7 @@
                         <Insets left="50.0" right="50.0" />
                     </HBox.margin>
                 </VBox>
-                <VBox fx:id="dinnerContainer" alignment="CENTER" onMouseClicked="#mealClickHandler" prefHeight="200.0" prefWidth="100.0" style="-fx-border-width: 1; -fx-border-color: #b6b8c3;">
+                <VBox fx:id="dinnerContainer" alignment="CENTER" maxHeight="-Infinity" onMouseClicked="#mealClickHandler" prefHeight="200.0" prefWidth="100.0" style="-fx-border-width: 1; -fx-border-color: #b6b8c3;">
                     <children>
                         <Label fx:id="dinnerLabel" onMouseClicked="#mealClickHandler" text="DINNER">
                             <font>
@@ -112,7 +112,7 @@
                     </HBox.margin>
                 </VBox>
             </children></HBox>
-        <HBox fx:id="dataContainer" alignment="CENTER" layoutX="400.0" layoutY="507.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <HBox fx:id="dataContainer" alignment="CENTER" layoutX="400.0" layoutY="507.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
             <children>
                 <Button fx:id="lastMonthButton" mnemonicParsing="false" onMouseClicked="#dataClickHandler" style="-fx-background-color: TRANSPARENTT;" text="Last Month Data">
                     <font>

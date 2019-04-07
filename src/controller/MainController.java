@@ -39,5 +39,6 @@ public class MainController {
 
     public void dataClickHandler(MouseEvent mouseEvent)
     {
+
     }
 }
