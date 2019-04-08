@@ -23,22 +23,27 @@ public class MainController {
 
     public void mealClickHandler(MouseEvent mouseEvent)
     {
-        try
-        {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/SecondScreen.fxml"));
-            Parent root1 = fxmlLoader.load();
-            mainStage.setScene(new Scene(root1));
-            mainStage.show();
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-        }
+        if (m)
 
     }
 
     public void dataClickHandler(MouseEvent mouseEvent)
     {
 
+    }
+
+    private void loadScene(Stage stage, String fxmlPath)
+    {
+        try
+        {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/view/SecondScreen.fxml"));
+            Parent root = fxmlLoader.load();
+            mainStage.setScene(new Scene(root));
+            mainStage.show();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 }

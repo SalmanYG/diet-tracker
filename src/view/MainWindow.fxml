@@ -112,7 +112,7 @@
                     </HBox.margin>
                 </VBox>
             </children></HBox>
-        <HBox fx:id="dataContainer" alignment="CENTER" layoutX="400.0" layoutY="507.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <HBox fx:id="dataContainer" alignment="CENTER" layoutX="400.0" layoutY="507.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
                 <Button fx:id="lastMonthButton" mnemonicParsing="false" onMouseClicked="#dataClickHandler" style="-fx-background-color: TRANSPARENTT;" text="Last Month Data">
                     <font>
